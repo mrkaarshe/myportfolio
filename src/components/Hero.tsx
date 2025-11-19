@@ -64,13 +64,13 @@ const AnimatedName = () => {
     const interval = setInterval(() => {
       setDisplayed(name.slice(0, indexRef.current + 1));
       indexRef.current = (indexRef.current + 1) % (name.length + 1);
-    }, 400); // Adjust speed here
+    }, 300); // Adjust speed here
     return () => clearInterval(interval);
   }, []);
 
   return (
     <span className="text-primary inline-block animate- flex items-center gap-2">
-      {displayed} <Hand size={45} />
+      {displayed} <Hand size={45}  />
     </span>
   );
 };
@@ -132,7 +132,7 @@ const Hero = () => {
         {/* Right content - Profile image with rotating border */}
         <div className="flex justify-center animate-fade-in">
           <div className="relative p-6">
-            <div className="absolute inset-0 rounded-full blur-3xl bg-gradient-to-tr from-[hsl(var(--primary))] via-[hsl(var(--accent))] to-[hsl(var(--secondary))] animate-pulse"></div>
+            <div className="absolute inset-10 rounded-full blur-3xl bg-gradient-to-tr from-[hsl(var(--primary))] via-[hsl(var(--accent))] to-[hsl(var(--secondary))] animate-pulse"></div>
             <div className="relative h-80 w-80 rounded-full flex items-center justify-center">
               <svg className="absolute h-full w-full animate-spin-slow" viewBox="0 0 200 200">
                 <circle
@@ -142,7 +142,7 @@ const Hero = () => {
                   stroke="url(#gradient)"
                   strokeWidth="5"
                   fill="transparent"
-                  strokeDasharray="2 22"
+                  strokeDasharray="1 10"
                 />
                 <defs>
                   <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">

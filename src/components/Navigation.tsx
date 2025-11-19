@@ -18,7 +18,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="text-2xl font-bold">
-            <span className="text-foreground">Kaarshe</span>
+            <span className="text-muted-foreground hover:text-primary transition-colors font-medium">KAARSHE</span>
             <span className="text-primary">.</span>
           </a>
           
@@ -43,10 +43,10 @@ const Navigation = () => {
           
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-primary"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
         

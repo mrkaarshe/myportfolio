@@ -2,7 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portfolioImg from "@/assets/project-portfolio.jpg";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
-import businessImg from "@/assets/project-business.jpg";
+import coffeHub from "@/assets/coffehub.png";
 
 const projects = [
   {
@@ -22,12 +22,12 @@ const projects = [
     githubUrl: "https://github.com/mrkaarshe/ES7MovieTrailer.git",
   },
   {
-    title: "FastBiz Dashbord seystem",
-    description: "The project includes an Admin Dashboard built with React.js, featuring a fully responsive design and a smooth, stylish interface. Only admins can log in, view live orders, manage order details, and update order statuses in real time.",
-    image: businessImg,
+    title: "Artisan Coffee Hub ",
+    description: "Artisan Coffee Hub is a premium coffee e-commerce platform built with react.js and shadcn UI. It offers a seamless shopping experience with advanced SEO and performance optimizations.",
+    image: coffeHub,
     tags: ["React", "SEO", "Performance","shadcn UI"],
-    demoUrl: "https://fast-biet-res-dashboar-g96p.vercel.app/login",
-    githubUrl: "https://github.com/mrkaarshe/FastBietResAdminDahshboard.git",
+    demoUrl: "https://artisancoffe.vercel.app/",
+    githubUrl: "https://github.com/mrkaarshe/artisamCoffe.git",
   },
 ];
 
