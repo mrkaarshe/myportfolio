@@ -56,7 +56,7 @@ const CounterMetric = ({ end, suffix = "", icon: Icon }: { end: number; suffix?:
 
 // Animated Name Typing
 const AnimatedName = () => {
-  const name = "Kaarshe";
+  const name = "KAARSHE";
   const [displayed, setDisplayed] = useState("");
   const indexRef = useRef(0);
 
@@ -96,11 +96,11 @@ const Hero = () => {
 
           <div className="space-y-2">
             <p className="text-xl md:text-2xl text-primary font-semibold">Full-Stack Developer</p>
-            <p className="text-lg text-muted-foreground">React & NodeJS Specialist • Modern UI Creator</p>
+            <p className="text-lg text-muted-foreground">MERN STACK • Modern UI Creator</p>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-            Passionate Full-Stack Developer: I’m deeply passionate about building beautiful, responsive web applications using React, TailwindCSS, and modern development tools. I bring creative ideas to life through clean, elegant front-end solutions, with a strong focus on user experience and high performance.
+            Passionate Full-Stack Developer: I’m deeply passionate about building beautiful, responsive web applications using React, TailwindCSS, and modern development tools. I bring creative ideas to life through clean, elegant Full-stack solutions, with a strong focus on user experience and high performance.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
@@ -142,10 +142,10 @@ const Hero = () => {
                   stroke="url(#gradient)"
                   strokeWidth="5"
                   fill="transparent"
-                  strokeDasharray="1 10"
+                  strokeDasharray="1 3"
                 />
                 <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="90%" y2="100%">
                     <stop offset="0%" stopColor="hsl(var(--primary))" />
                     <stop offset="50%" stopColor="hsl(var(--accent))" />
                     <stop offset="100%" stopColor="hsl(var(--secondary))" />
@@ -154,7 +154,7 @@ const Hero = () => {
               </svg>
               <img
                 src={profileImage}
-                alt="Kaarshe - Front-End Developer"
+                alt="Kaarshe - full-stack Developer"
                 className="rounded-full h-72 w-72 object-cover shadow-2xl"
               />
             </div>

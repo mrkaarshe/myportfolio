@@ -1,4 +1,4 @@
-import { Globe, Code, Smartphone, Figma, Briefcase } from "lucide-react";
+import { Globe,Search, Server, Code, Smartphone, Figma, Briefcase } from "lucide-react";
 
 const services = [
   {
@@ -25,6 +25,16 @@ const services = [
     icon: Briefcase,
     title: "Portfolio Website Creation",
     description: "Crafting stunning portfolio websites that showcase your work and leave a lasting impression.",
+  },
+    {
+    icon: Search,
+    title: "SEO Optimization",
+    description: "Improving website visibility on search engines through SEO-friendly structure and best practices.",
+  },
+    {
+    icon: Server,
+    title: "Backend Development",
+    description: "Building scalable and secure backends using Node.js, Express, and RESTful APIs.",
   },
 ];
 

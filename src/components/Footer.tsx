@@ -11,7 +11,7 @@ const Footer = () => {
               <span className="text-primary">.</span>
             </p>
             <p className="text-muted-foreground">
-              FUll-Stack Developer • React & nodeJS Specialist
+              FUll-Stack Developer • mern-stack Specialist
             </p>
           </div>
           
