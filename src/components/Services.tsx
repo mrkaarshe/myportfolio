@@ -1,47 +1,69 @@
-import { Globe,Search, Server, Code, Smartphone, Figma, Briefcase } from "lucide-react";
+import { 
+  Globe, 
+  Search, 
+  Server, 
+  Code, 
+  Smartphone, 
+  Figma, 
+  Briefcase,
+  Layers,
+  Terminal,
+  Zap,
+  Layout
+} from "lucide-react";
 
 const services = [
   {
-    icon: Globe,
-    title: "Modern Website Development",
-    description: "Building fast, scalable, and SEO-friendly websites using the latest web technologies and best practices.",
+    icon: Layout,
+    title: "Full-Stack Web Development",
+    description: "End-to-end development of modern, scalable web applications using the MERN stack and clean architectural patterns.",
   },
   {
     icon: Code,
-    title: "React Development",
-    description: "Creating dynamic, component-based applications with React.js for seamless user experiences.",
+    title: "React Frontend Engineering",
+    description: "Building fast, interactive, and component-driven frontends with React.js, TailwindCSS, and modern UI design systems.",
+  },
+  {
+    icon: Server,
+    title: "Backend & API Development",
+    description: "Developing secure and scalable REST APIs using Node.js and Express, with optimized database structures.",
   },
   {
     icon: Smartphone,
-    title: "Responsive Design",
-    description: "Ensuring your website looks perfect on all devices, from mobile phones to large desktop screens.",
+    title: "Responsive & Adaptive Design",
+    description: "Creating seamless user experiences that look perfect on all devices, from mobile to large desktops.",
   },
   {
     icon: Figma,
-    title: "UI Development from Figma",
-    description: "Transforming Figma designs into pixel-perfect, functional web interfaces with attention to detail.",
+    title: "UI Implementation from Figma",
+    description: "Converting Figma UI/UX designs into pixel-perfect, accessible, fully functional web interfaces.",
+  },
+  {
+    icon: Layers,
+    title: "System Architecture Design",
+    description: "Planning and structuring scalable architectures with best practices for performance, reliability, and maintainability.",
+  },
+  {
+    icon: Globe,
+    title: "Modern Website Development",
+    description: "Developing SEO-friendly, high-performance websites using the latest web technologies and optimization strategies.",
+  },
+  {
+    icon: Search,
+    title: "SEO Optimization",
+    description: "Improving search visibility through semantic structure, fast loading times, and on-page SEO best practices.",
   },
   {
     icon: Briefcase,
-    title: "Portfolio Website Creation",
-    description: "Crafting stunning portfolio websites that showcase your work and leave a lasting impression.",
-  },
-    {
-    icon: Search,
-    title: "SEO Optimization",
-    description: "Improving website visibility on search engines through SEO-friendly structure and best practices.",
-  },
-    {
-    icon: Server,
-    title: "Backend Development",
-    description: "Building scalable and secure backends using Node.js, Express, and RESTful APIs.",
+    title: "Portfolio & Business Websites",
+    description: "Creating professional portfolio and business websites that build credibility and enhance your digital presence.",
   },
 ];
 
 const Services = () => {
   return (
     <section id="services" className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             My <span className="text-primary">Services</span>
@@ -51,7 +73,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -64,7 +86,7 @@ const Services = () => {
                   <Icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
               </div>
             );
           })}

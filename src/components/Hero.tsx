@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/profile-kaarshe.jpg";
+import profileImage from "@/assets/profile-kaarshe.png";
 import { ArrowRight, Hand, Github, Linkedin, Mail } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Users, Briefcase, Award, TrendingUp } from "lucide-react";
@@ -56,7 +56,7 @@ const CounterMetric = ({ end, suffix = "", icon: Icon }: { end: number; suffix?:
 
 // Animated Name Typing
 const AnimatedName = () => {
-  const name = "KAARSHE";
+  const name = "Kaarshe";
   const [displayed, setDisplayed] = useState("");
   const indexRef = useRef(0);
 
@@ -78,7 +78,7 @@ const AnimatedName = () => {
 // Hero Section
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-  px-4 py-20 relative">
       {/* Animated background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card" />
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -95,12 +95,12 @@ const Hero = () => {
           </div>
 
           <div className="space-y-2">
-            <p className="text-xl md:text-2xl text-primary font-semibold">Full-Stack Developer</p>
-            <p className="text-lg text-muted-foreground">MERN STACK • Modern UI Creator</p>
+            <p className="text-xl md:text-2xl text-primary font-semibold">Full-Stack Developer | MERN Stack </p>
+            <p className="text-lg text-muted-foreground">Modern UI Engineer</p>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-            Passionate Full-Stack Developer: I’m deeply passionate about building beautiful, responsive web applications using React, TailwindCSS, and modern development tools. I bring creative ideas to life through clean, elegant Full-stack solutions, with a strong focus on user experience and high performance.
+          I’m a Full-Stack Developer specializing in the MERN stack, focused on building responsive, high-quality web applications. I create modern user interfaces with React and TailwindCSS and develop scalable back-end solutions that ensure speed, reliability, and smooth functionality. I’m passionate about clean code, strong UI/UX, and delivering polished digital experiences.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
@@ -166,7 +166,7 @@ const Hero = () => {
       <div className="w-[100%] sm:w-[60%] mt-20 px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg">
           <div className="space-y-2">
-            <CounterMetric end={100} suffix="+" icon={Briefcase} />
+            <CounterMetric end={45} suffix="+" icon={Briefcase} />
             <p className="text-sm text-muted-foreground text-center">Projects Completed</p>
           </div>
           <div className="space-y-2">
@@ -174,7 +174,7 @@ const Hero = () => {
             <p className="text-sm text-muted-foreground text-center">Client Satisfaction</p>
           </div>
           <div className="space-y-2">
-            <CounterMetric end={50} suffix="+" icon={Users} />
+            <CounterMetric end={20} suffix="+" icon={Users} />
             <p className="text-sm text-muted-foreground text-center">Happy Clients</p>
           </div>
           <div className="space-y-2">
