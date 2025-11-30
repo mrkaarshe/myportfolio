@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 import portfolioImg from "@/assets/project-portfolio.jpg";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import coffeHub from "@/assets/coffehub.png";
+import qiyam from "@/assets/qiyamMedia.png";
 import dashboard from "@/assets/project-business.jpg"
+import abdihalim from "@/assets/adbihalimPortfolio.png"
 // Remote images as strings (safe URLs, no import)
 const socialImg = "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80";
 const taskImg = "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80";
@@ -40,21 +42,21 @@ const projects = [
     githubUrl: "https://github.com/mrkaarshe/artisamCoffe.git",
   },
   {
-    title: "Social Connect Platform",
+    title: "porfolio social media platform",
     description:
-      "A social media platform featuring user profiles, posts, likes, comments, and real-time chat powered by Socket.IO.",
-    image: socialImg,
-    tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
-    demoUrl: "#",
+      "abdi halim a graphic designer brands social media platform ",
+    image: abdihalim,
+    tags: ["NextJs", "Tailwindcss"],
+    demoUrl: "https://noah-ivory.vercel.app/",
     githubUrl: "#",
   },
   {
-    title: "TaskMaster Pro",
+    title: "Qiyam Media Pro",
     description:
-      "A project & task management tool with Kanban board, drag-and-drop tasks, deadlines, authentication, and user roles.",
-    image: taskImg,
-    tags: ["React", "Express", "MongoDB", "JWT", "Drag & Drop"],
-    demoUrl: "#",
+      "Professional media production, video filming, graphic design, and branding services for Islamic organizations and businesses.",
+    image: qiyam,
+    tags: ["Nextjs", "Tailwind css"],
+    demoUrl: "https://qiyam-media-pro.vercel.app/",
     githubUrl: "#",
   },
   {

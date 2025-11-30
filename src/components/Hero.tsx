@@ -164,7 +164,7 @@ const Hero = () => {
 
       {/* Client Metrics */}
       <div className="w-[100%] sm:w-[60%] mt-20 px-4 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8  backdrop-blur-sm  rounded-2xl p-8 ">
           <div className="space-y-2">
             <CounterMetric end={45} suffix="+" icon={Briefcase} />
             <p className="text-sm text-muted-foreground text-center">Projects Completed</p>
