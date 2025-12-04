@@ -59,15 +59,16 @@ const projects = [
     demoUrl: "https://qiyam-media-pro.vercel.app/",
     githubUrl: "#",
   },
-  {
-    title: "Learnify LMS Platform",
-    description:
-      "A complete online learning system with courses, instructors, student dashboards, progress tracking, and payments.",
-    image: dashboard,
-    tags: ["React", "Node.js", "Stripe", "Video Streaming"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+{
+  title: "Fastbite Dashboard System",
+  description:
+    "A fast and efficient restaurant management dashboard system for tracking orders, inventory, and sales in real-time.",
+  image: dashboard, 
+  tags: ["React", "Node.js", "Tailwind CSS", "MongoDB"],
+  demoUrl: "https://fast-biet-res-dashboar-g96p.vercel.app/login",
+  githubUrl: "#", 
+}
+
 ];
 
 const Projects = () => {

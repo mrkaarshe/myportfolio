@@ -33,11 +33,7 @@ const services = [
     title: "Responsive & Adaptive Design",
     description: "Creating seamless user experiences that look perfect on all devices, from mobile to large desktops.",
   },
-  {
-    icon: Figma,
-    title: "UI Implementation from Figma",
-    description: "Converting Figma UI/UX designs into pixel-perfect, accessible, fully functional web interfaces.",
-  },
+
   {
     icon: Layers,
     title: "System Architecture Design",
