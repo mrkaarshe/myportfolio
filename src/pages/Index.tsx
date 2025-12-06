@@ -5,14 +5,15 @@ import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { WhatIdo } from "@/components/WhatIdo";
 
 
 const Index = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen  overflow-x-hidden">
       <Navigation />
       <Hero />
-      <About />
+      <WhatIdo />
       <Services />
       <Projects />
       <Contact />

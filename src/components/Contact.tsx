@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-6 animate-slide-in-left">
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-lg">
               <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
                 <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-primary" />
@@ -119,7 +119,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg space-y-6 animate-fade-in">
+          <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-5 shadow-lg space-y-6 animate-fade-in">
             <div>
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
             </div>
