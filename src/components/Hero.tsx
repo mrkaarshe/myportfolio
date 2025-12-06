@@ -50,25 +50,7 @@ import "aos/dist/aos.css";
 // };
 
 // Animated Name Typing
-const AnimatedName = () => {
-  const name = "Kaarshe";
-  const [displayed, setDisplayed] = useState("");
-  const indexRef = useRef(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDisplayed(name.slice(0, indexRef.current + 1));
-      indexRef.current = (indexRef.current + 1) % (name.length + 1);
-    }, 250);
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <span className="text-primary inline-flex items-center gap-2">
-      {displayed} <Hand size={45} />
-    </span>
-  );
-};
 
 // // Hero Section - New 3D style
 // const Hero = () => {
@@ -170,6 +152,7 @@ import { useEffect, useRef } from "react"
 import { Star, Quote, Code2, Rocket,Files, Zap, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FloatingCard from "@/components/Floatin-card"
+
 // import profileImage from "@/assets/profile-kaarshe.png";
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -180,6 +163,25 @@ const HeroSection = () => {
       easing: "ease-in-out",
     });
   }, []);
+  const AnimatedName = () => {
+  const name = "Kaarshe";
+  const [displayed, setDisplayed] = useState("");
+  const indexRef = useRef(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplayed(name.slice(0, indexRef.current + 1));
+      indexRef.current = (indexRef.current + 1) % (name.length + 1);
+    }, 250);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <span className="text-primary inline-flex items-center gap-2">
+      {displayed} <Hand size={45} />
+    </span>
+  );
+};
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -270,7 +272,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button variant="hero" size="lg" className="group ">
-              View Projects
+              <a href="#projects">View Projects</a>
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="glow" size="lg">
@@ -310,7 +312,7 @@ const HeroSection = () => {
         <div data-aos="fade-up" className="flex-1 relative h-full flex items-center justify-center">
           {/* Floating background circles */}
           <div
-            className="absolute w-96 h-96 bg-gradient-to-br from-primary/20 to-accent/20 opacity-40 rounded-full blur-2xl -z-10"
+            className="absolute w-96 h-96 bg-gradient-to-br from-primary/20 to-accent/20 opacity-60 rounded-full blur-2xl -z-10"
             data-floating
             data-offset="15"
           />
@@ -322,11 +324,9 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
               <div
                 className="relative w-96 h-96 rounded-3xl overflow-hidden border-b-2 border-primary/30 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('/profile-kaarshe.png')`,
-                  backgroundPosition: "center",
-                }}
+ 
               >
+                <img src="/profile-kaarshe.png" className="w-1/1 h-full bg-cover object-cover"  alt="" />
                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-xs opacity-5 transition-opacity duration-300" />
               </div>
             </div>
@@ -348,7 +348,7 @@ const HeroSection = () => {
             </FloatingCard>
 
             {/* Testimonial Card 2 - Bottom Left */}
-            <FloatingCard offset={20} delay={1} className="absolute -bottom-30 -left-6">
+            <FloatingCard offset={20} delay={1} className="absolute -bottom-12  -left-6">
               <div data-aos="fade-right" className="bg-white/5 rounded-2xl p-4 shadow-lg border border-white/20 backdrop-blur-md w-48">
                 <div className="flex items-center gap-2 mb-2">
                   <Quote size={16} className="text-white flex-shrink-0" />

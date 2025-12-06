@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, Briefcase, FolderKanban, Mail } from "lucide-react";
+import { Menu, X, User, Briefcase,Files, FolderKanban, Mail } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -34,10 +34,11 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <a href="#contact">
-                 <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20">
-              Let's Connect
-            </span>
+          <a  href="#contact">
+                           <button  className=" gap-2 text-lg flex justify-between items-center mt-1 text-muted-foreground rounded-md  font-medium ">
+              <Files className="text-muted-foreground" size={24}/>
+              Resume
+            </button>
             </a>
           </div>
           
@@ -64,11 +65,13 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <button onClick={() => setIsOpen(false)}>
-                 <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20">
-              Let's Connect
-            </span>
+
+          <a onClick={() => setIsOpen(false)} href="#contact">
+                           <button  className=" gap-2 text-lg flex justify-between items-center mt-1 text-muted-foreground rounded-md  font-medium ">
+              <Files className="text-muted-foreground" size={24}/>
+              Resume
             </button>
+            </a>
           </div>
         )}
       </div>
