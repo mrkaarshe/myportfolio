@@ -8,6 +8,10 @@ import coffeHub from "@/assets/coffehub.png";
 import qiyam from "@/assets/qiyamMedia.png";
 import dashboard from "@/assets/project-business.jpg"
 import abdihalim from "@/assets/adbihalimPortfolio.png"
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 // Remote images as strings (safe URLs, no import)
 const socialImg = "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80";
 const taskImg = "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80";
@@ -71,11 +75,19 @@ const projects = [
 
 ];
 
+
 const Projects = () => {
+      useEffect(() => {
+      aos.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    }, []);
   return (
     <section id="projects" className="py-20 px-4 bg-card/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
+        <div data-aos="fade-up" className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-primary">Projects</span>
           </h2>
@@ -86,7 +98,7 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <div data-aos="fade-up"
               key={project.title}
               className="group bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in"
               style={{ animationDelay: `${index * 150}ms` }}

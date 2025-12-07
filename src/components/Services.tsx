@@ -81,7 +81,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
+        <div data-aos="fade-up" className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Skills &  
  <span className="text-primary">Services</span>

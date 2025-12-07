@@ -4,6 +4,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Github, Linkedin, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +15,13 @@ const Contact = () => {
     message: "",
   });
   const { toast } = useToast();
-
+      useEffect(() => {
+      aos.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-in-out",
+      });
+    }, []);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -29,7 +38,7 @@ const Contact = () => {
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+        <div data-aos="fade-up" className="text-center mb-16 animate-fade-in">
           <div className="inline-block mb-4">
             <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20">
               Let's Connect
@@ -46,7 +55,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-6 animate-slide-in-left">
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-lg">
+            <div data-aos="fade-right" className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-lg">
               <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
                 <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Mail className="w-4 h-4 text-primary" />
@@ -92,7 +101,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-2xl p-8 shadow-lg">
+            <div data-aos="fade-up" className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
               <p className="text-muted-foreground mb-6 text-sm">Follow me on social media for updates and insights</p>
               <div className="flex gap-4">
@@ -119,7 +128,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-5 shadow-lg space-y-6 animate-fade-in">
+          <form data-aos="fade-left" onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-5 shadow-lg space-y-6 animate-fade-in">
             <div>
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
             </div>

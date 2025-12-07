@@ -249,9 +249,9 @@ const HeroSection = () => {
     
 
       {/* Main content */}
-      <div className="relative mt-10 z-10 flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 py-12 md:py-20 gap-12">
+      <div className="relative mt-10 z-10 flex flex-col lg:flex-row items-center justify-between px-6 md:px-6 py-12 md:py-20 gap-12">
         {/* Left content */}
-        <div className="flex-1 max-w-2xl">
+        <div className="flex-2 max-w-2xl">
           <div className="inline-block mb-6">
             <span className="px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold border border-primary/30">
               ✨ Build the future with code
@@ -263,7 +263,7 @@ const HeroSection = () => {
             <AnimatedName />
           </h1>
           <p className="text-xl md:text-2xl text-primary font-semibold">
-            Full-Stack Developer | MERN Stack
+            Full-Stack Developer | <span className="text-white"> MERN Stack</span>
           </p>
           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
            I’m a Full-Stack Developer specializing in the MERN stack, focused on building responsive, high-quality web applications. I create modern user interfaces with React and TailwindCSS and develop scalable back-end solutions that ensure speed, reliability, and smooth functionality. I’m passionate about clean code, strong UI/UX, and delivering polished digital experiences.
@@ -282,7 +282,7 @@ const HeroSection = () => {
           <div className="flex gap-4">
             {[{icon: Github, link:"https://github.com/mrkaarshe"}, {icon: Linkedin, link:"https://www.linkedin.com/in/eng-kaarshe-51611b387/"}, {icon: Mail, link:"#"}].map((social, idx) => (
               <a key={idx} href={social.link} target="_blank" rel="noopener noreferrer"
-                className="flex-1 h-20 max-w-20 bg-background/80 rounded-full border border-border flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/10 transition-all group">
+                className="flex-1 h-20 max-w-20 bg-background/80 rounded-full border border-border hover:border-primary flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/10 transition-all group">
                 <social.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
             ))}
@@ -293,14 +293,14 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 mt-10 gap-6">
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-              <div>
+              <div data-aos="fade-up">
                 <h3 className="font-semibold text-foreground">React & Next.js</h3>
                 <p className="text-sm text-muted-foreground">Modern frameworks for scalable apps</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
-              <div>
+              <div data-aos="fade-up">
                 <h3 className="font-semibold text-foreground">Full Stack</h3>
                 <p className="text-sm text-muted-foreground">End-to-end development expertise</p>
               </div>

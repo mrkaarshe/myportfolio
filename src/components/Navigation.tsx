@@ -10,6 +10,7 @@ const Navigation = () => {
     { name: "Services", href: "#services", icon: Briefcase },
     { name: "Projects", href: "#projects", icon: FolderKanban },
     { name: "Contact", href: "#contact", icon: Mail },
+    {name : "Resume" , href:"", icon:Files}
   ];
 
   return (
@@ -17,8 +18,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold">
-            <span className="text-muted-foreground hover:text-primary transition-colors font-medium">KAARSHE</span>
+          <a href="#" className="text-2xl font-bold flex justify-center items-center">
+            <img src="/kaarshe.ico" className="w-7 h-7 flex md:hidden" alt="kaarshe.png" />
+            <span className="text-muted-foreground hover:text-primary transition-colors font-medium hidden md:flex">KAARSHE</span>
             <span className="text-primary">.</span>
           </a>
           
@@ -34,12 +36,7 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-          <a  href="#contact">
-                           <button  className=" gap-2 text-lg flex justify-between items-center mt-1 text-muted-foreground rounded-md  font-medium ">
-              <Files className="text-muted-foreground" size={24}/>
-              Resume
-            </button>
-            </a>
+
           </div>
           
           {/* Mobile Menu Button */}
@@ -66,12 +63,6 @@ const Navigation = () => {
               </a>
             ))}
 
-          <a onClick={() => setIsOpen(false)} href="#contact">
-                           <button  className=" gap-2 text-lg flex justify-between items-center mt-1 text-muted-foreground rounded-md  font-medium ">
-              <Files className="text-muted-foreground" size={24}/>
-              Resume
-            </button>
-            </a>
           </div>
         )}
       </div>
