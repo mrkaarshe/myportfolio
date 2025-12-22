@@ -85,8 +85,8 @@ const Projects = () => {
       });
     }, []);
   return (
-    <section id="projects" className="py-20 px-4 bg-card/30">
-      <div className="max-w-7xl mx-auto">
+    <section id="projects" className="py-20  bg-card/30">
+      <div className="container mx-auto">
         <div data-aos="fade-up" className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-primary">Projects</span>

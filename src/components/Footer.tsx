@@ -2,8 +2,8 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-4 border-t border-border bg-card/30">
-      <div className="max-w-6xl mx-auto">
+    <footer className="py-12  border-t border-border bg-card/30">
+      <div className="container  mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-lg font-semibold mb-2">

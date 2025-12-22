@@ -87,11 +87,11 @@ export function WhatIdo() {
   }, [])
 
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
+    <section className="relative py-20  px-4 overflow-hidden">
       <div className="absolute inset-0 bg-card/20 pointer-events-none" />
 
       <div data-aos="fade-down" className="relative max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-4 text-primary">What I Do</h2>
+        <h2 className="text-5xl font-bold text-center mb-4 text-primary">What <span className="text-white">I Do</span></h2>
         <p className="text-center text-gray-400 mb-20 text-lg">
           A journey through my professional experience
         </p>

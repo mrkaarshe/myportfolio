@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold flex justify-center items-center">
+          <a href="#" className="text-2xl font-bold flex justify-center gap-2 items-center">
             <img src="/kaarshe.ico" className="w-7 h-7 flex md:hidden" alt="kaarshe.png" />
             <span className="text-muted-foreground hover:text-primary transition-colors font-medium hidden md:flex">KAARSHE</span>
             <span className="text-primary">.</span>
